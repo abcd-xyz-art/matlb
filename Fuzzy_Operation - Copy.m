@@ -1,0 +1,13 @@
+B1=[1 0.75 0.3 0.15 0];
+B2=[1 0.6 0.2 0.1 0];
+union= max(B1,B2)
+inter=min(B1,B2)
+comp1=1-B1 
+comp2=1-B2
+diff= min(B1,comp2) 
+union_bar=1-union 
+inter_bar=1-inter
+eighth=min(B1,comp1)
+ninth=max(B1,comp1)
+tenth=min(B2,comp2)
+eleventh=max(B2,comp2)
